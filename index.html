@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HT Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <img src="images/HT_background2.png" alt="Failed loading image." />
+      <div class="ServerTime">
+        <span>Server Time: </span>
+        <span id="STime"></span>
+      </div>
+      <!-- HEAD A -->
+      <div class="HeadA">
+        <button id="A_Red"></button>
+        <button id="A_Blue"></button>
+        <button id="A_Black"></button>
+        <!-- RED -->
+        <div id="A_Red_Text">
+          <div id="A_Red_topText">
+            <span>Will summon in: </span>
+            <span id="A_Red_CD"></span>
+          </div>
+          <div id="A_Red_botText">
+            <span>Next summon time: </span>
+            <span id="A_Red_Time"></span>
+          </div>
+          <span id="A_Red_pop">SUMMON SOON !</span>
+        </div>
+        <!-- BLUE -->
+        <div id="A_Blue_Text">
+          <div id="A_Blue_topText">
+            <span>Will summon in: </span>
+            <span id="A_Blue_CD"></span>
+          </div>
+          <div id="A_Blue_botText">
+            <span>Next summon time: </span>
+            <span id="A_Blue_Time"></span>
+          </div>
+          <span id="A_Blue_pop">SUMMON SOON !</span>
+        </div>
+        <!-- BLACK -->
+        <div id="A_Black_Text">
+          <div id="A_Black_topText">
+            <span>Will summon in: </span>
+            <span id="A_Black_CD"></span>
+          </div>
+          <div id="A_Black_botText">
+            <span>Next summon time: </span>
+            <span id="A_Black_Time"></span>
+          </div>
+          <span id="A_Black_pop">SUMMON SOON !</span>
+        </div>
+      </div>
+
+      <!-- HEAD B -->
+      <div class="HeadB">
+        <button id="B_Red"></button>
+        <button id="B_Blue"></button>
+        <button id="B_Black"></button>
+        <button id="B_DP1"></button>
+        <button id="B_DP2"></button>
+        <!-- RED -->
+        <div id="B_Red_Text">
+          <div id="B_Red_topText">
+            <span>Will summon in: </span>
+            <span id="B_Red_CD"></span>
+          </div>
+          <div id="B_Red_botText">
+            <span>Next summon time: </span>
+            <span id="B_Red_Time"></span>
+          </div>
+          <span id="B_Red_pop">SUMMON SOON !</span>
+        </div>
+        <!-- BLUE -->
+        <div id="B_Blue_Text">
+          <div id="B_Blue_topText">
+            <span>Will summon in: </span>
+            <span id="B_Blue_CD"></span>
+          </div>
+          <div id="B_Blue_botText">
+            <span>Next summon time: </span>
+            <span id="B_Blue_Time"></span>
+          </div>
+          <span id="B_Blue_pop">SUMMON SOON !</span>
+        </div>
+        <!-- BLACK -->
+        <div id="B_Black_Text">
+          <div id="B_Black_topText">
+            <span>Will summon in: </span>
+            <span id="B_Black_CD"></span>
+          </div>
+          <div id="B_Black_botText">
+            <span>Next summon time: </span>
+            <span id="B_Black_Time"></span>
+          </div>
+          <span id="B_Black_pop">SUMMON SOON !</span>
+        </div>
+        <!-- DP1 -->
+        <div id="B_DP1_Text">
+          <div id="B_DP1_topText">
+            <span>Will dispel in: </span>
+            <span id="B_DP1_CD"></span>
+          </div>
+          <div id="B_DP1_botText">
+            <span>Next dispel time: </span>
+            <span id="B_DP1_Time"></span>
+          </div>
+          <span id="B_DP1_pop">DISPEL SOON !</span>
+        </div>
+        <!-- DP2 -->
+        <div id="B_DP2_Text">
+          <div id="B_DP2_topText">
+            <span>Will dispel in: </span>
+            <span id="B_DP2_CD"></span>
+          </div>
+          <div id="B_DP2_botText">
+            <span>Next dispel time: </span>
+            <span id="B_DP2_Time"></span>
+          </div>
+          <span id="B_DP2_pop">DISPEL SOON !</span>
+        </div>
+      </div>
+
+      <!-- HEAD C -->
+      <div class="HeadC">
+        <button id="C_Red"></button>
+        <button id="C_Blue"></button>
+        <button id="C_Black"></button>
+        <!-- RED -->
+        <div id="C_Red_Text">
+          <div id="C_Red_topText">
+            <span>Will summon in: </span>
+            <span id="C_Red_CD"></span>
+          </div>
+          <div id="C_Red_botText">
+            <span>Next summon time: </span>
+            <span id="C_Red_Time"></span>
+          </div>
+          <span id="C_Red_pop">SUMMON SOON !</span>
+        </div>
+        <!-- BLUE -->
+        <div id="C_Blue_Text">
+          <div id="C_Blue_topText">
+            <span>Will summon in: </span>
+            <span id="C_Blue_CD"></span>
+          </div>
+          <div id="C_Blue_botText">
+            <span>Next summon time: </span>
+            <span id="C_Blue_Time"></span>
+          </div>
+          <span id="C_Blue_pop">SUMMON SOON !</span>
+        </div>
+        <!-- BLACK -->
+        <div id="C_Black_Text">
+          <div id="C_Black_topText">
+            <span>Will summon in: </span>
+            <span id="C_Black_CD"></span>
+          </div>
+          <div id="C_Black_botText">
+            <span>Next summon time: </span>
+            <span id="C_Black_Time"></span>
+          </div>
+          <span id="C_Black_pop">SUMMON SOON !</span>
+        </div>
+      </div>
+
+      <!-- Hands -->
+      <div class="Hands">
+        <button id="L_Sed"></button>
+        <button id="R_Sed"></button>
+        <button id="L_DP"></button>
+        <!-- L_Sed -->
+        <div id="L_Sed_Text">
+          <div id="L_Sed_topText">
+            <span>Will seduce in: </span>
+            <span id="L_Sed_CD"></span>
+          </div>
+          <div id="L_Sed_botText">
+            <span>Next seduce time: </span>
+            <span id="L_Sed_Time"></span>
+          </div>
+          <span id="L_Sed_pop">SEDUCE SOON !</span>
+        </div>
+        <!-- R_Sed -->
+        <div id="R_Sed_Text">
+          <div id="R_Sed_topText">
+            <span>Will seduce in: </span>
+            <span id="R_Sed_CD"></span>
+          </div>
+          <div id="R_Sed_botText">
+            <span>Next seduce time: </span>
+            <span id="R_Sed_Time"></span>
+          </div>
+          <span id="R_Sed_pop">SEDUCE SOON !</span>
+        </div>
+        <!-- L_DP -->
+        <div id="L_DP_Text">
+          <div id="L_DP_topText">
+            <span>Will dispel in: </span>
+            <span id="L_DP_CD"></span>
+          </div>
+          <div id="L_DP_botText">
+            <span>Next dispel time: </span>
+            <span id="L_DP_Time"></span>
+          </div>
+          <span id="L_DP_pop">DISPEL SOON !</span>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="Skills">
+        <button id="Smoke1"></button>
+        <button id="Smoke2"></button>
+        <button id="Smoke3"></button>
+        <button id="TL1"></button>
+        <button id="TL2"></button>
+        <button id="Ress"></button>
+        <button id="Grave"></button>
+        <!-- Smoke1 -->
+        <div id="Smoke1_Text">
+          <div id="Smoke1_topText">
+            <span>Smokescreen up in: </span>
+            <span id="Smoke1_CD"></span>
+            <span id="Smoke1_Time"></span>
+          </div>
+          <span id="Smoke1_pop">SMOKESCREEN UP !</span>
+        </div>
+        <!-- Smoke2 -->
+        <div id="Smoke2_Text">
+          <div id="Smoke2_topText">
+            <span>Smokescreen up in: </span>
+            <span id="Smoke2_CD"></span>
+            <span id="Smoke2_Time"></span>
+          </div>
+          <span id="Smoke2_pop">SMOKESCREEN UP !</span>
+        </div>
+        <!-- Smoke3 -->
+        <div id="Smoke3_Text">
+          <div id="Smoke3_topText">
+            <span>Smokescreen up in: </span>
+            <span id="Smoke3_CD"></span>
+            <span id="Smoke3_Time"></span>
+          </div>
+          <span id="Smoke3_pop">SMOKESCREEN UP !</span>
+        </div>
+        <!-- TL1 -->
+        <div id="TL1_Text">
+          <div id="TL1_topText">
+            <span>Time Leap up in: </span>
+            <span id="TL1_CD"></span>
+            <span id="TL1_Time"></span>
+          </div>
+          <span id="TL1_pop">TIME LEAP UP !</span>
+        </div>
+        <!-- TL2 -->
+        <div id="TL2_Text">
+          <div id="TL2_topText">
+            <span>Time Leap up in: </span>
+            <span id="TL2_CD"></span>
+            <span id="TL2_Time"></span>
+          </div>
+          <span id="TL2_pop">TIME LEAP UP !</span>
+        </div>
+        <!-- Ress -->
+        <div id="Ress_Text">
+          <div id="Ress_topText">
+            <span>Ress up in: </span>
+            <span id="Ress_CD"></span>
+            <span id="Ress_Time"></span>
+          </div>
+          <span id="Ress_pop">RESS UP !</span>
+        </div>
+        <!-- Grave -->
+        <div id="Grave_Text">
+          <div id="Grave_topText">
+            <span>Time left to ress: </span>
+            <span id="Grave_CD"></span>
+            <span id="Grave_Time"></span>
+          </div>
+          <span id="Grave_pop"></span>
+        </div>
+      </div>
+
+      <button id="How"></button>
+
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

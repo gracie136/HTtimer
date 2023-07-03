@@ -1,0 +1,228 @@
+:root {
+    --doc-height: 100%;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    height: var(--doc-height);
+    width: calc(var(--doc-height)/1200*1600);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.wrap img {
+    position: absolute;
+    height: 100%; 
+}
+
+.ServerTime {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 3vh;
+}
+
+#A_Red, #A_Blue, #A_Black,
+#B_Red, #B_Blue, #B_Black, 
+#C_Red, #C_Blue, #C_Black {
+    border-radius: 10%;
+    position: absolute;
+    height: 7.6%;
+    width: 5.7%;
+    background-size: 250%;
+    background-position-x: 10%;
+    background-position-y: 40%;
+}
+
+#B_DP1, #B_DP2, #L_Sed, #R_Sed, #L_DP,
+#Smoke1, #Smoke2, #Smoke3, #TL1, #TL2,
+#Ress, #Grave, #How {
+    border-radius: 10%;
+    position: absolute;
+    height: 7.6%;
+    width: 5.7%;
+    background-size: 100%;
+    background-position: center;
+}
+
+#Smoke1, #Smoke2, #Smoke3, #TL1, #TL2, #Ress, #Grave {
+    height: 6.4%;
+    width: 4.8%;
+}
+#How { height: 5%; width: 15%; border-radius: 6%;}
+
+#A_Red:hover, #A_Blue:hover, #A_Black:hover,
+#B_Red:hover, #B_Blue:hover, #B_Black:hover,
+#C_Red:hover, #C_Blue:hover, #C_Black:hover {
+    background-color: slategray;
+    transition-duration: 0.1s
+}
+
+#B_DP1:hover, #B_DP2:hover, #L_Sed:hover, #R_Sed:hover, #L_DP:hover,
+#Smoke1:hover, #Smoke2:hover, #Smoke3:hover, #TL1:hover, #TL2:hover,
+#Ress:hover, #Grave:hover, #How:hover {
+    background-color: rgb(190, 190, 190);
+    transition-duration: 0.1s
+}
+
+#A_Red {   top: 27%; left: 1%;    background-image: url('../images/R.gif'); }
+#A_Blue {  top: 35%; left: 1%;    background-image: url('../images/BLU.gif'); }
+#A_Black { top: 43%; left: 1%;    background-image: url('../images/BLA.gif'); }
+#B_Red {   top: 11%; left: 37%;   background-image: url('../images/R.gif'); }
+#B_Blue {  top: 19%; left: 37%;   background-image: url('../images/BLU.gif'); }
+#B_Black { top: 27%; left: 37%;   background-image: url('../images/BLA.gif'); }
+#C_Red {   top: 27%; left: 72.5%; background-image: url('../images/R.gif'); }
+#C_Blue {  top: 35%; left: 72.5%; background-image: url('../images/BLU.gif'); }
+#C_Black { top: 43%; left: 72.5%; background-image: url('../images/BLA.gif'); }
+
+#B_DP1 { top: 35%; left: 37%; background-image: url('../images/DP1.png'); }
+#B_DP2 { top: 43%; left: 37%; background-image: url('../images/DP2.png'); }
+#L_Sed { top: 62%; left: 1%;  background-image: url('../images/Seduce.gif'); }
+#R_Sed { top: 62%; left: 72.5%;  background-image: url('../images/Seduce.gif'); }
+#L_DP  { top: 80%; left: 1%;  background-image: url('../images/L_DP.png'); }
+
+#Smoke1 { top: 62%; left: 37%;   background-image: url('../images/Smoke1.png'); }
+#Smoke2 { top: 69%; left: 37%;   background-image: url('../images/Smoke2.png'); }
+#Smoke3 { top: 76%; left: 37%;   background-image: url('../images/Smoke3.png'); }
+#TL1    { top: 83%; left: 37%;   background-image: url('../images/TL1.png'); }
+#TL2    { top: 90%; left: 37%;   background-image: url('../images/TL2.png'); }
+#Ress   { top: 80%; left: 72.5%;   background-image: url('../images/Ress.png'); }
+#Grave  { top: 87%; left: 72.5%;   background-image: url('../images/Grave.png'); }
+
+#How { top: 1%; left: 1%; background-image: url('../images/How.png'); }
+
+#A_Red_Text, #A_Blue_Text, #A_Black_Text,
+#B_Red_Text, #B_Blue_Text, #B_Black_Text,
+#C_Red_Text, #C_Blue_Text, #C_Black_Text,
+#B_DP1_Text, #B_DP2_Text,
+#L_Sed_Text, #R_Sed_Text, #L_DP_Text, 
+#Smoke1_Text, #Smoke2_Text, #Smoke3_Text,
+#TL1_Text, #TL2_Text, #Ress_Text, #Grave_Text {
+    visibility: hidden;
+}
+
+#A_Red_topText, #A_Red_pop, #A_Red_botText, 
+#A_Blue_topText, #A_Blue_pop, #A_Blue_botText, 
+#A_Black_topText, #A_Black_pop, #A_Black_botText, 
+#B_Red_topText, #B_Red_pop, #B_Red_botText, 
+#B_Blue_topText, #B_Blue_pop, #B_Blue_botText, 
+#B_Black_topText, #B_Black_pop, #B_Black_botText, 
+#C_Red_topText, #C_Red_pop, #C_Red_botText, 
+#C_Blue_topText, #C_Blue_pop, #C_Blue_botText, 
+#C_Black_topText, #C_Black_pop, #C_Black_botText, 
+#B_DP1_topText, #B_DP1_pop, #B_DP1_botText,
+#B_DP2_topText, #B_DP2_pop, #B_DP2_botText,
+#L_Sed_topText, #L_Sed_pop, #L_Sed_botText,
+#R_Sed_topText, #R_Sed_pop, #R_Sed_botText,
+#L_DP_topText, #L_DP_pop, #L_DP_botText,
+#Smoke1_topText, #Smoke1_pop, #Smoke2_topText, #Smoke2_pop, #Smoke3_topText, #Smoke3_pop,
+#TL1_topText, #TL1_pop, #TL2_topText, #TL2_pop,
+#Ress_topText, #Ress_pop, #Grave_topText, #Grave_pop {
+    position: absolute;
+    font-size: 2vh;
+}
+
+#A_Red_pop, #A_Blue_pop, #A_Black_pop,
+#B_Red_pop, #B_Blue_pop, #B_Black_pop,
+#C_Red_pop, #C_Blue_pop, #C_Black_pop,
+#B_DP1_pop, #B_DP2_pop,
+#L_Sed_pop, #R_Sed_pop, #L_DP_pop, 
+#Smoke1_pop, #Smoke2_pop, #Smoke3_pop,
+#TL1_pop, #TL2_pop, #Ress_pop {
+    color: crimson;
+    background: #ffd868;
+    box-shadow: 0 0 30px#ffd868;
+    padding: 1vh 1vh;
+    border-radius: 1vh;
+}
+
+/*--------------------*/
+#A_Red_topText { top: 28%;   left: 7.5%; }
+#A_Red_pop {     top: 28.5%; left: 8%; }
+#A_Red_botText { top: 31%;   left: 7.5%; }
+
+#A_Blue_topText { top: 36%;   left: 7.5%; }
+#A_Blue_pop {     top: 36.5%; left: 8%; }
+#A_Blue_botText { top: 39%;   left: 7.5%; }
+
+#A_Black_topText { top: 44%;   left: 7.5%; }
+#A_Black_pop {     top: 44.5%; left: 8%; }
+#A_Black_botText { top: 47%;   left: 7.5%; }
+
+/*--------------------*/
+#B_Red_topText { top: 12%;   left: 43.5%; }
+#B_Red_pop {     top: 12.5%; left: 44%; }
+#B_Red_botText { top: 15%;   left: 43.5%; }
+
+#B_Blue_topText { top: 20%;   left: 43.5%; }
+#B_Blue_pop {     top: 20.5%; left: 44%; }
+#B_Blue_botText { top: 23%;   left: 43.5%; }
+
+#B_Black_topText { top: 28%;   left: 43.5%; }
+#B_Black_pop {     top: 28.5%; left: 44%; }
+#B_Black_botText { top: 31%;   left: 43.5%; }
+
+#B_DP1_topText { top: 36%;   left: 43.5%; }
+#B_DP1_pop {     top: 36.5%; left: 44%; }
+#B_DP1_botText { top: 39%;   left: 43.5%; }
+
+#B_DP2_topText { top: 44%;   left: 43.5%; }
+#B_DP2_pop {     top: 44.5%; left: 44%; }
+#B_DP2_botText { top: 47%;   left: 43.5%; }
+
+/*--------------------*/
+#C_Red_topText { top: 28%;   left: 79%; }
+#C_Red_pop {     top: 28.5%; left: 79.5%; }
+#C_Red_botText { top: 31%;   left: 79%; }
+
+#C_Blue_topText { top: 36%;   left: 79%; }
+#C_Blue_pop {     top: 36.5%; left: 79.5%; }
+#C_Blue_botText { top: 39%;   left: 79%; }
+
+#C_Black_topText { top: 44%;   left: 79%; }
+#C_Black_pop {     top: 44.5%; left: 79.5%; }
+#C_Black_botText { top: 47%;   left: 79%; }
+
+/*--------------------*/
+#L_Sed_topText { top: 63%;   left: 7.5%; }
+#L_Sed_pop {     top: 63.5%; left: 8%; }
+#L_Sed_botText { top: 66%;   left: 7.5%; }
+
+#R_Sed_topText { top: 63%;   left: 79%; }
+#R_Sed_pop {     top: 63.5%; left: 79.5%; }
+#R_Sed_botText { top: 66%;   left: 79%; }
+
+#L_DP_topText { top: 81%;   left: 7.5%; }
+#L_DP_pop {     top: 81.5%; left: 8%; }
+#L_DP_botText { top: 84%;   left: 7.5%; }
+
+/*--------------------*/
+#Smoke1_topText { top: 64%; left: 42.5%; }
+#Smoke1_pop {     top: 63%; left: 43%; }
+#Smoke2_topText { top: 71%; left: 42.5%; }
+#Smoke2_pop {     top: 70%; left: 43%; }
+#Smoke3_topText { top: 78%; left: 42.5%; }
+#Smoke3_pop {     top: 77%; left: 43%; }
+
+#TL1_topText { top: 85%; left: 42.5%; }
+#TL1_pop {     top: 84%; left: 43%; }
+#TL2_topText { top: 92%; left: 42.5%; }
+#TL2_pop {     top: 91%; left: 43%; }
+
+#Ress_topText { top: 82%; left: 78%; }
+#Ress_pop {     top: 81%; left: 78.5%; }
+#Grave_topText { top: 89%; left: 78%; }
+#Grave_pop {     top: 88%; left: 78.5%; }
