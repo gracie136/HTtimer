@@ -478,7 +478,13 @@ document.getElementById('How').addEventListener('click',
         alert('How to use this timer?\n\n' +
         '1. Everytime anything happens in horntail, click on the corresponding button ' +
         'to show the cooldown and estimated time.\n\n' + 
-        '2. There are 2 different Dispel timers for Head B, 1st dispel happens when Head B is at 60% HP ' + 
-        '(After 2nd blue wyvern wave), 2nd dispel happens when Head B is at 30% HP (After 2nd dark wyvern wave)');
+        '2. After the timer shows up, you can predict what will happen in horntail later, ' +
+        'which leads to easier decision/strategy making for your team!\n\n' +
+        '3. There are 2 different Dispel timers for Head B, 1st dispel happens when Head B is at 60% HP ' + 
+        '(usually after 2nd blue wyvern wave), 2nd dispel happens when Head B is at 30% HP ' + 
+        '(usually after 2nd dark wyvern wave).\n\n' + 
+        '4. Dispel by left hand happens when it is at 60% HP (usually after 1st warning).\n\n' +
+        '5. Mass seduce happens after right hand\'s warning/left hand\'s 2nd warning.'
+        );
     }
 );
